@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "fêrî kurdî",
+    "name": "Fêrî kurdî",
     "slug": "feri-kurdi",
     "version": "1.2.1",
     "orientation": "portrait",
@@ -9,7 +9,7 @@
       "supportsTablet": true,
       "bundleIdentifier": "com.ferikurdi.kurd",
       "infoPlist": {
-        "CFBundleDisplayName": "fêrî kurdî"
+        "CFBundleDisplayName": "Fêrî kurdî"
       }
     },
     "android": {
