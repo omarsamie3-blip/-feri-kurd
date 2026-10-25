@@ -4,7 +4,6 @@
     "slug": "feri-kurdi",
     "version": "1.2.1",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
     "userInterfaceStyle": "automatic",
     "ios": {
       "supportsTablet": true,
@@ -14,11 +13,7 @@
       }
     },
     "android": {
-      "package": "com.ferikurdi.kurd",
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
+      "package": "com.ferikurdi.kurd"
     }
   }
 }
