@@ -85,7 +85,7 @@ const BRAND_BANNER =
         <line x1="475" y1="310" x2="499" y2="286"/>
       </g>
       <text x="600" y="500" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
-        font-size="132" font-weight="800" fill="#111111">fêrî kurdî</text>
+        font-size="132" font-weight="800" fill="#111111">Fêrî kurdî</text>
       <text x="600" y="610" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
         font-size="42" font-weight="700" fill="#333333">Ziman • Çand • Fêrbûn</text>
     </svg>
@@ -676,7 +676,7 @@ export default function FeriKurdiV3() {
               <View style={styles.logoCenter}><PulseSun /></View>
               <View style={[styles.logoBand, { backgroundColor: K.green }]} />
             </View>
-            <Text style={styles.brand}>fêrî kurdî</Text>
+            <Text style={styles.brand}>Fêrî kurdî</Text>
             <Text style={styles.tagline}>تعلّم • استمع • العب • اكتشف الثقافة</Text>
             <View style={styles.miniBadges}>
               <Text style={styles.miniBadge}>320 جملة</Text>
@@ -776,7 +776,7 @@ export default function FeriKurdiV3() {
               <View style={styles.todayPill}><Text style={styles.todayText}>🔥 سلسلة اليوم</Text></View>
             </View>
             <PulseSun />
-            <Text style={styles.heroBrand}>fêrî kurdî</Text>
+            <Text style={styles.heroBrand}>Fêrî kurdî</Text>
             <Text style={styles.heroTag}>Ziman • Çand • Fêrbûn</Text>
             <View style={styles.heroStats}>
               <View style={styles.heroStat}><Text style={styles.heroStatNum}>{points}</Text><Text style={styles.heroStatLabel}>⭐ نقطة</Text></View>
