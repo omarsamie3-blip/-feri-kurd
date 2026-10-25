@@ -61,6 +61,37 @@ type PictureQuestion = {
 
 const W = Dimensions.get('window').width;
 
+const BRAND_BANNER =
+  'data:image/svg+xml;utf8,' +
+  encodeURIComponent(`
+    <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+      <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#D71920"/>
+          <stop offset="48%" stop-color="#FFF9EA"/>
+          <stop offset="100%" stop-color="#168B45"/>
+        </linearGradient>
+      </defs>
+      <rect width="1200" height="800" rx="72" fill="url(#bg)"/>
+      <circle cx="600" cy="185" r="92" fill="#F6C515"/>
+      <g stroke="#F6C515" stroke-width="18" stroke-linecap="round">
+        <line x1="600" y1="42" x2="600" y2="8"/>
+        <line x1="600" y1="362" x2="600" y2="328"/>
+        <line x1="457" y1="185" x2="423" y2="185"/>
+        <line x1="777" y1="185" x2="743" y2="185"/>
+        <line x1="499" y1="84" x2="475" y2="60"/>
+        <line x1="725" y1="310" x2="701" y2="286"/>
+        <line x1="701" y1="84" x2="725" y2="60"/>
+        <line x1="475" y1="310" x2="499" y2="286"/>
+      </g>
+      <text x="600" y="500" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
+        font-size="132" font-weight="800" fill="#111111">fêrî kurdî</text>
+      <text x="600" y="610" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
+        font-size="42" font-weight="700" fill="#333333">Ziman • Çand • Fêrbûn</text>
+    </svg>
+  `);
+
+
 const K = {
   red: '#D71920',
   redDark: '#A60E14',
@@ -631,7 +662,7 @@ export default function FeriKurdiV3() {
       <SafeAreaView style={styles.safe}>
         <RNStatusBar barStyle="dark-content" />
         <ImageBackground
-          source={require('../assets/images/ferikurdi_banner.png')}
+          source={{ uri: BRAND_BANNER }}
           style={styles.welcomeBg}
           imageStyle={styles.welcomeBgImage}
         >
@@ -732,7 +763,7 @@ export default function FeriKurdiV3() {
         <RNStatusBar barStyle="light-content" />
         <ScrollView showsVerticalScrollIndicator={false}>
           <ImageBackground
-            source={require('../assets/images/ferikurdi_banner.png')}
+            source={{ uri: BRAND_BANNER }}
             style={styles.homeHero}
             imageStyle={styles.homeHeroImage}
           >
@@ -995,6 +1026,6 @@ export default function FeriKurdiV3() {
           contentContainerStyle={styles.pagePad}
           ListHeaderComponent={
             <View>
-              <ImageBackground source={require('../assets/images/ferikurdi_banner.png')} style={styles.cultureBanner} imageStyle={styles.cultureBannerImage}>
+              <ImageBackground source={{ uri: BRAND_BANNER }} style={styles.cultureBanner} imageStyle={styles.cultureBannerImage}>
                 <LinearGradient colors={['rgba(0,0,0,0.08)','rgba(0,0,0,0.62)']} style={StyleSheet.absoluteFill} />
                 <Text style={styles.cultureBannerTitle}>Çanda Kurdî</Text>
