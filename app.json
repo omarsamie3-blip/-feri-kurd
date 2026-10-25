@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "fêrî kurdî",
+    "slug": "feri-kurdi",
+    "version": "1.2.1",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ferikurdi.kurd",
+      "infoPlist": {
+        "CFBundleDisplayName": "fêrî kurdî"
+      }
+    },
+    "android": {
+      "package": "com.ferikurdi.kurd",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    }
+  }
+}
